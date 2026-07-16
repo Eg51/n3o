@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   // preview image
   openGraph: {
-    images: ["https://www.n3o.netlify.app/2ogo.png"]
+    images: ["https://www.n330.netlify.app/2ogo.png"]
   }
 };
 

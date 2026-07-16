@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { init } from "next/dist/compiled/webpack/webpack";
 
 
 //imported fonts always display after the first load time
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   },
   // preview image
   openGraph: {
-    images: ["/2ogo.png"]
+    images: ["https://www.n3o.netlify.app/2ogo.png"]
   }
 };
 

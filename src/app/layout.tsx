@@ -22,8 +22,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "improved banking experience",
-  description: "improved banking experience",
+  title: "Improved banking experience",
+  description: "Improved banking experience",
+  icons: {
+    icon: "/1ogo.png",
+  },
+  // preview image
+  openGraph: {
+    images: ["/2ogo.png"]
+  }
 };
 
 export default function RootLayout({children,}: Readonly<{

@@ -1,19 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
 
-const page = async () => { // 1. Make it async
-  // 2. Add something to await so loading triggers
-  await new Promise((resolve) => setTimeout(resolve, 1500)) 
-  
+
+const page = async () => { 
+  await new Promise((resolve) => setTimeout(resolve, 2000))
 
 
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold">Yage</h1>
-      <p>This is Yage content</p>
-      <Link href="/qpage" className="text-blue-500 underline mt-4 block">
-        Back to Qpage
-      </Link>
+    <div className="flex 
+     sm:flex 
+     md:flex
+     lg:flex 
+     ">
+        <div className="w-screen h-screen flex flex-col items-center justify-center bg-radial  from-blue-200 to-cyan-200 to-gray-300
+        sm:w-screen sm:h-screen sm:flex sm:flex-col sm:items-center sm:justify-center
+        md:w-screen md:h-screen md:flex md:flex-col md:items-center md:justify-center
+       ">
+   
+              
+        </div>
     </div>
   )
 }

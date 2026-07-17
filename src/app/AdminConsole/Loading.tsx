@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link'
 import { motion } from "framer-motion";
 
 const Loading = () => {
@@ -30,6 +31,10 @@ const Loading = () => {
           className="w-auto h-auto m-auto p-0"
         />
       </motion.div>
+      <Link href={"/Dashboard"} className="font-poppins text-[100%]
+          text-blue-500 no-underline mb-6 block font-bold">
+           <h1>reresh</h1>
+      </Link> 
     </div>
   );
 };

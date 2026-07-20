@@ -10,7 +10,7 @@ const growthVelocity = [28, 34, 24, 46, 40, 62, 70];
 export default function GrowthToolsCTA() {
   return (
     <section className="w-full rounded-3xl bg-radial from-blue-200 via-cyan-200 to-purple-200 px-6 py-16 text-white">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto rounded-3xl max-w-6xl">
         {/* Advanced growth tools panel */}
         <div className="grid grid-cols-1 gap-8 rounded-2xl border border-white/10 bg-white/[0.03] p-8 lg:grid-cols-[0.85fr_1.15fr]">
           {/* Left: copy + feature list */}

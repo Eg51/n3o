@@ -3,6 +3,7 @@ import { Poppins, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { init } from "next/dist/compiled/webpack/webpack";
 import Image from 'next/image'
+import Headerr from '@/app/components/Headerr'
 
 
 //imported fonts always display after the first load time
@@ -25,10 +26,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Improved banking experience",
-  description: "Improved Banking Experience",
+  description: "Next Generation Banking Experience",
   // preview image
   openGraph: {
-    images: ["https://www.n330.netlify.app/2ogo.png"]
+    images: ["/preview.png"]
   }
 };
 export default function RootLayout({
@@ -39,24 +40,21 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased
-      sm:h-full sm:antialiased
-      md:h-full md:antialiased
-      lg:h-full lg:antialiased`}
+      className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} bg-radial from-blue-200 to-gray-300 to-gray-300 antialiased
+`}
       >
         <body className="min-h-full flex flex-col
         sm:font-poppins sm:min-h-full sm:flex sm:flex-col
         md:font-poppins md:min-h-full md:flex md:flex-col
         lg:font-poppins lg:min-h-full lg:flex lg:flex-col">
-          <header className="sm:flex
+          {/* <header className="sm:flex
           md:flex
-          lg:flex"></header>
+          lg:flex"></header> */}
           <div className='bg-[<value>]'>
-            {children}
+            <div className="bg-radial from-blue-200 to-gray-300 to-gray-300 w-auto h-auto">
+             {children}
+            </div>
           </div>
-          <footer className="sm:flex
-          md:flex
-          lg:flex"></footer>
       </body>
     </html>
   );

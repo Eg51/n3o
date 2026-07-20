@@ -1,5 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import LuminaBankHero from '../components/LuminaBankHero'
+import LuminaBankHero1 from '../components/LuminaBankHero1'
+import AshTrustHero from '@/app/components/AshTrustHero'
+
 
 
 const page = async () => { 
@@ -12,12 +16,10 @@ const page = async () => {
      md:flex
      lg:flex 
      ">
-        <div className="w-screen h-screen flex flex-col items-center justify-center bg-radial  from-blue-200 to-cyan-200 to-gray-300
+        <div className="w-screen h-screen flex flex-col items-center justify-center
         sm:w-screen sm:h-screen sm:flex sm:flex-col sm:items-center sm:justify-center
         md:w-screen md:h-screen md:flex md:flex-col md:items-center md:justify-center
        ">
-   
-              
         </div>
     </div>
   )

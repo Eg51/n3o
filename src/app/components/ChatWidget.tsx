@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { MessageCircle, X } from "lucide-react";
+import Link from 'next/link'
 
 interface ChatWidgetProps {
   /** Support agent / team name shown in the popup header */
@@ -14,7 +15,7 @@ interface ChatWidgetProps {
 }
 
 export default function ChatWidget({
-  supportName = "Ashford",
+  supportName = "Ashie",
   message = "Hi , how can we be of help today?",
   defaultOpen = true,
 }: ChatWidgetProps) {
@@ -36,7 +37,7 @@ export default function ChatWidget({
           >
             <div className="flex items-start justify-between gap-3">
               <p className="text-sm text-slate-600">
-                Message from{" "}
+                {" "}
                 <span className="font-semibold text-slate-900">
                   {supportName}
                 </span>
@@ -51,14 +52,16 @@ export default function ChatWidget({
               </button>
             </div>
 
+           <Link href={'/UserChat'}>
             <motion.p
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.3 }}
-              className="mt-3 text-[15px] leading-relaxed text-slate-900"
-            >
-              {message}
-            </motion.p>
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.3 }}
+                className="mt-3 cursor-pointer text-[15px] leading-relaxed text-slate-900"
+              >
+                {message}
+              </motion.p>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
@@ -71,7 +74,8 @@ export default function ChatWidget({
         whileTap={{ scale: 0.94 }}
         aria-label={isOpen ? "Close chat" : "Open chat"}
         aria-expanded={isOpen}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-500 text-white shadow-lg transition-colors hover:bg-blue-600 sm:h-14 sm:w-14"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-500
+         text-white shadow-lg transition-colors hover:bg-blue-600 sm:h-14 sm:w-14"
       >
         <AnimatePresence mode="wait" initial={false}>
           {isOpen ? (

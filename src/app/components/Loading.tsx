@@ -8,11 +8,7 @@ import Link from "next/link";
 const Loading = () => {
   return (
     <div
-      className="flex items-center justify-center h-screen
-    sm:flex sm:items-center sm:justify-center sm:h-screen
-    md:flex md:items-center md:justify-center md:h-screen
-    lg:flex lg:items-center lg:justify-center lg:h-screen"
-    >
+      className="flex items-center flex-col gap-1 justify-center h-screen"    >
       <motion.div
         className="w-auto h-auto m-0"
         animate={{ scale: [1, 1.2, 1] }}
@@ -31,10 +27,6 @@ const Loading = () => {
           className="w-auto h-auto m-auto p-0"
         />
       </motion.div>
-      <Link href={"/Dashboard"} className="font-poppins text-[100%]
-          text-blue-500 no-underline mb-6 block font-bold">
-           <h1>reresh</h1>
-      </Link> 
     </div>
   );
 };

@@ -506,7 +506,7 @@ export default function AshTrustHero() {
             <motion.div
               variants={cardFade}
               whileHover={{ y: -4 }}
-              className="rounded-2xl border absolutecursor-pointer border-white/10 bg-gradient-to-br from-blue-200 via-cyan-200 to-purple-200 p-6 shadow-lg transition-shadow hover:shadow-xl"
+              className="rounded-2xl border absolutecursor-pointer border-none bg-gradient-to-br from-blue-200 via-cyan-200 to-purple-200 p-6 shadow-lg transition-shadow hover:shadow-xl"
             >
               <div className="flex items-center justify-between cursor-pointer">
                 <p className="text-base font-semibold text-slate-900">
@@ -572,8 +572,8 @@ export default function AshTrustHero() {
                   Forgot password?
                 </Link>
                 <span>
-                  New here?{""}
-                  <Link
+                  <span  className="pr-1"> New here?</span>
+                <Link
                     href={"/sign-up"}
                     className="font-medium cursor-pointer text-cyan-800 hover:underline"
                   >

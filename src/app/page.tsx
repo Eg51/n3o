@@ -29,13 +29,13 @@ import ChatWidget from './components/ChatWidget'
 
 const ADMIN_UID = "aQxcpCiG56tvhbbaVqaZ3a5CrIU1HUYTR8";
 
-const page = async () => { 
+const page = async () => {
   await new Promise((resolve) => setTimeout(resolve, 2000))
 
   return (
     <>
-      <AshTrustHero/>
-      <ChatWidget/>
+      <AshTrustHero />
+      <ChatWidget />
     </>
   )
 }

@@ -421,7 +421,7 @@ export default function AshTrustHero() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-              >  Open Account</motion.div>
+              >  Creat account</motion.div>
               </motion.button>
 
             </Link>

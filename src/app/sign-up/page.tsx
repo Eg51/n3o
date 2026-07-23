@@ -11,7 +11,7 @@ const page = async () => {
 
 
   return (
-    <div className="flex bg-radial items-center justify-around from-blue-200 to-cyan-200 to-gray-300  ">
+    <div className="flex bg-radial items-center justify-around from-blue-200 to-cyan-200 to-gray-300 ">
 
       <BankRegistrationForm />
 

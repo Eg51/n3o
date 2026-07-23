@@ -25,6 +25,7 @@
 import React from 'react'
 import AshTrustHero from '@/app/components/AshTrustHero'
 import ChatWidget from './components/ChatWidget'
+import ChatWidgett from './components/ChatWidgett'
 // import AdminUserChat from './components/AdminUserChat' // Remove this from here
 
 const ADMIN_UID = "aQxcpCiG56tvhbbaVqaZ3a5CrIU1HUYTR8";
@@ -35,7 +36,9 @@ const page = async () => {
   return (
     <>
       <AshTrustHero />
-      <ChatWidget />
+      {/* <ChatWidget /> */}
+      <ChatWidgett />
+
     </>
   )
 }

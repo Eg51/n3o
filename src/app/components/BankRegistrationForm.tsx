@@ -158,7 +158,7 @@ export default function BankRegistrationForm() {
                 <motion.div className="bg-transparent from-blue-200 border-none
                  rounded-lg pt-5" variants={fieldVariants}>
                   <h1 className="text-xl font-bold text-cyan-700 text-center sm:text-2xl">
-                  Create Open Your Account
+                  Create Your Account
                   </h1>
                   <p className="mt-1.5 text-sm font p-2 text-center text-cyan-700">
                     Don't have an account? We've got you covered, create one in minutes.

@@ -1,10 +1,10 @@
 import React from 'react'
-import BusinessGrowthHero from '../components/BusinessGrowthHero'
+// import AdminChatPanel from '../components/AdminUserChat'
 
 const page = () => {
   return (
     <div>
-      <BusinessGrowthHero/>
+      {/* <AdminChatPanel/> */}
     </div>
   )
 }

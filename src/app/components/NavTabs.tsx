@@ -346,7 +346,7 @@ export default function NavTabs({
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="absolute left-0 top-full z-50 mt-2 w-48 overflow-hidden rounded-lg border border-none shadow-lg backdrop-blur sm:hidden"
+            className="absolute left-0 top-full z-50 mt-2 w-48 overflow-hidden rounded-lg border border-none shadow-xl backdrop-blur sm:hidden"
           >
             <div className="flex flex-col py-2">
               {tabs.map((tab) => {

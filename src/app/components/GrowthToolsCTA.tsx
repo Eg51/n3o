@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TrendingUp, RefreshCw } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
 // ---- Data ---------------------------------------------------------------
 
@@ -58,10 +59,21 @@ export default function GrowthToolsCTA() {
                 <p className="text-[10px] font-bold text-cyan-900 tracking-wide">
                   EQUITY BALANCE
                 </p>
-                <p className="mt-1 text-lg font-semibold">$4,281,090</p>
+            <AnimatedCounter
+                  value={4281090}
+                  prefix="$"
+                  suffix=""
+                  className="mt-1 text-lg font-semibold"/>
+                  <TrendingUp size={12} />
+                  
+                  <AnimatedCounter
+                    value={14}
+                    prefix="+"
+                    suffix="%"
+                    className="mt-1 flex items-center gap-1
+                    text-sm font-bold text-emerald-400"/>
                 <p className="mt-1 flex items-center gap-1 text-sm font-bold text-emerald-400">
                   <TrendingUp size={12} />
-                  +12.4%
                 </p>
               </div>
               <div className="rounded-lg border-none p-4">
@@ -79,6 +91,8 @@ export default function GrowthToolsCTA() {
               <p className="text-[10px] tracking-wide text-cyan-900 font-bold">
                 GROWTH  CHART
               </p>
+
+              
               <div className="mt-4 flex h-24 items-end gap-2">
                 {growthVelocity.map((value, i) => (
                   <span
@@ -92,6 +106,8 @@ export default function GrowthToolsCTA() {
                   />
                 ))}
               </div>
+
+
             </div>
           </div>
         </div>

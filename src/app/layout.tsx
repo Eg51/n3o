@@ -13,7 +13,7 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap"
 });
-      
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description: "Next Generation Banking Experience",
   // preview image
   openGraph: {
-    images: ["/preview.png"]
+    images: ["https://www.n330.netlify.app/preview.png"]
   }
 };
 export default function RootLayout({
@@ -40,21 +40,21 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} bg-radial from-blue-200 to-gray-300 to-gray-300 antialiased
+      className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased
 `}
-      >
-        <body className="min-h-full flex flex-col
+    >
+      <body className="min-h-full flex flex-col
         sm:font-poppins sm:min-h-full sm:flex sm:flex-col
         md:font-poppins md:min-h-full md:flex md:flex-col
         lg:font-poppins lg:min-h-full lg:flex lg:flex-col">
-          {/* <header className="sm:flex
+        {/* <header className="sm:flex
           md:flex
           lg:flex"></header> */}
-          <div className='bg-[<value>]'>
-            <div className="bg-radial from-blue-200 to-gray-300 to-gray-300 w-auto h-auto">
-             {children}
-            </div>
+        <div className='bg-[<value>]'>
+          <div className="pt-5 w-auto h-auto">
+            {children}
           </div>
+        </div>
       </body>
     </html>
   );

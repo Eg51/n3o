@@ -14,7 +14,7 @@ interface ChatWidgetProps {
 }
 
 export default function ChatWidget({
-  supportName = "Whogohost Support",
+  supportName = "Ashie",
   message = "Hi , how can we be of help today?",
   defaultOpen = true,
 }: ChatWidgetProps) {
@@ -32,11 +32,12 @@ export default function ChatWidget({
             transition={{ duration: 0.25, ease: "easeOut" }}
             role="dialog"
             aria-label="Support chat"
-            className="w-[88vw] max-w-[300px] rounded-2xl bg-slate-300 p-5 shadow-2xl sm:w-80 sm:max-w-sm"
+            className="w-[88vw] max-w-[300px] rounded-2xl bg-slate-300
+             p-5 shadow-2xl sm:w-80 sm:max-w-sm"
           >
             <div className="flex items-start justify-between gap-3">
               <p className="text-sm text-slate-600">
-                Message from{" "}
+                {" "}
                 <span className="font-semibold text-slate-900">
                   {supportName}
                 </span>
@@ -45,7 +46,8 @@ export default function ChatWidget({
                 type="button"
                 onClick={() => setIsOpen(false)}
                 aria-label="Close chat"
-                className="shrink-0 rounded-full p-1 text-slate-500 transition-colors hover:bg-slate-400/30 hover:text-slate-800"
+                className="shrink-0 rounded-full p-1 text-slate-500
+                transition-colors hover:bg-slate-400/30 hover:text-slate-800"
               >
                 <X size={16} />
               </button>
@@ -57,6 +59,15 @@ export default function ChatWidget({
               transition={{ delay: 0.1, duration: 0.3 }}
               className="mt-3 text-[15px] leading-relaxed text-slate-900"
             >
+
+
+
+
+
+
+
+              
+{/* modify-here */}
               {message}
             </motion.p>
           </motion.div>
@@ -71,7 +82,8 @@ export default function ChatWidget({
         whileTap={{ scale: 0.94 }}
         aria-label={isOpen ? "Close chat" : "Open chat"}
         aria-expanded={isOpen}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-500 text-white shadow-lg transition-colors hover:bg-blue-600 sm:h-14 sm:w-14"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-500
+         text-white shadow-lg transition-colors hover:bg-cyan-400 sm:h-14 sm:w-14"
       >
         <AnimatePresence mode="wait" initial={false}>
           {isOpen ? (

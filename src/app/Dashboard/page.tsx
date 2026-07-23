@@ -1,5 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import ChatWidgett from '@/app/components/ChatWidgett'
+import DashboardHero from '@/app/components/DashboardHero'
+import Iconpack from '../components/Iconpack'
 
 
 const page = async () => { 
@@ -7,19 +10,15 @@ const page = async () => {
 
 
   return (
-    <div className="flex 
-     sm:flex 
-     md:flex
-     lg:flex 
-     ">
-        <div className="w-screen h-screen flex flex-col items-center justify-center bg-radial  from-blue-200 to-cyan-200 to-gray-300
-        sm:w-screen sm:h-screen sm:flex sm:flex-col sm:items-center sm:justify-center
-        md:w-screen md:h-screen md:flex md:flex-col md:items-center md:justify-center
-       ">
-   
-              
+    <section className="flex bg-transparent w-screen h-screen">
+        <div className=" flex flex-col p-9">
+          <DashboardHero/>
+          <ChatWidgett/>
+          <Iconpack/>
         </div>
-    </div>
+
+
+    </section>
   )
 }
 

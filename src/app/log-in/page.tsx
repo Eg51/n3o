@@ -5,11 +5,7 @@ const page = () => {
   return (
     <div className='flex bg-white/[0.03] p-8'>
       <ChatWidgett/>
-
-
-
-
-
+      
     </div>
   )
 }

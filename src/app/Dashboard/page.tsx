@@ -10,14 +10,14 @@ const page = async () => {
 
 
   return (
-    <section className="flex bg-transparent w-screen h-screen">
-        <div className=" flex flex-col p-9">
+    <section className="flex pt-9 sm:bg-cyan-400/40 w-screen sm:h-cover">
+        <div className=" flex flex-col">
           <DashboardHero/>
           <ChatWidgett/>
-          <Iconpack/>
+          
         </div>
 
-
+      <Iconpack/>
     </section>
   )
 }

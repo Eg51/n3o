@@ -43,18 +43,15 @@ export default function RootLayout({
       className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased
 `}
     >
-      <body className="min-h-full flex flex-col
-        sm:font-poppins sm:min-h-full sm:flex sm:flex-col
-        md:font-poppins md:min-h-full md:flex md:flex-col
-        lg:font-poppins lg:min-h-full lg:flex lg:flex-col">
+      <body className="h-full flex flex-col">
         {/* <header className="sm:flex
           md:flex
           lg:flex"></header> */}
-        <div className='bg-[<value>]'>
-          <div className="pt-5 w-auto h-auto">
+        {/* <div className='bg-[<value>]'> */}
+          <div className="p-0 m-0 w-auto h-auto">
             {children}
           </div>
-        </div>
+        {/* </div> */}
       </body>
     </html>
   );

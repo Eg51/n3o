@@ -20,11 +20,12 @@ const DashboardHero = () => {
   ];
 
   return (
+    
     <div className='w-[17em] hidden h-auto p-4 sticky md:flex flex-col
-     rounded-2xl bg-cyan-600/40 gap-[1.54em] shadow-xl'>
+     rounded-2xl gap-[1.54em]'>
       <div className='hidden md:block w-auto h-auto p-[1.4em] rounded-2xl
         shadow-xl bg-transparent'>
-        <div className="flex flex-wrap items-center gap-[1em] sm:gap-10">
+        <div className="flex items-center gap-[0.4em] sm:gap-10">
           <Image
             src="/loadLogo_shield_smooth.png"
             alt="Shield logo"
@@ -80,8 +81,8 @@ const DashboardHero = () => {
       
       <div className='w-auto font-bold h-auto px-[2em] text-cyan-900 py-[1.4em]
         flex items-center justify-evenly bg-transparent'>
-        <div className="mx-auto flex max-w-6xl flex-col items-center 
-        justify-between gap-4 px-4 py-5 text-center text-[0.1em]
+        <div className="mx-auto flex max-w-6xl md:flex-col flex-col items-center 
+        justify-center gap-4 px-4 py-5 text-center text-[0.2em]
          text-cyan-900 sm:flex-row sm:px-6">
           <p>© 2024 Ash Trust Bank plc. All rights reserved. Member FDIC.</p>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">

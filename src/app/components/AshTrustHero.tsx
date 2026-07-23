@@ -372,7 +372,7 @@ const gridItem: Variants = {
 export default function AshTrustHero() {
   return (
     <>
-    <section className="w-full p-3 min-h-screen flex   bg-gradient-to-br from-blue-200
+    <section className="w-full pt-9 min-h-screen flex   bg-gradient-to-br from-blue-200
      via-cyan-100 to-gray-300 px-6 md:px-4 pt-8 text-[#0a0e17] sm:px-6 pt-9">
       <div className="mx-auto  max-w-screen">
         {/* Nav */}
@@ -699,7 +699,7 @@ export default function AshTrustHero() {
     whileInView={{ opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 0.6 }}
-    className="border-t border-white/10 bg-transprent"
+    className="border-t border-white/10 bg-cyan-400/40"
   >
     <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-5 text-center text-[11px]
      text-[#0a0e17] sm:flex-row sm:px-6 sm:text-left">
